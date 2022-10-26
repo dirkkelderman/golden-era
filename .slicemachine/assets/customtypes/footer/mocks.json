@@ -1,0 +1,84 @@
+{
+  "id": "mock-doc-id",
+  "url": null,
+  "type": "footer",
+  "href": null,
+  "tags": [],
+  "first_publication_date": "1970-01-01T00:00:01+0000",
+  "last_publication_date": "1970-01-01T00:00:01+0000",
+  "slugs": [],
+  "linked_documents": [],
+  "lang": "en-us",
+  "alternate_languages": [],
+  "data": {
+    "sitemapHeading": [
+      {
+        "type": "paragraph",
+        "text": "Cillum eiusmod ea magna nisi ex officia adipisicing.",
+        "spans": []
+      }
+    ],
+    "sitemap": [
+      {
+        "link": {
+          "link_type": "Web",
+          "url": "https://prismic.io"
+        },
+        "label": [
+          {
+            "type": "paragraph",
+            "text": "Fugiat ipsum in do ad ut officia amet magna minim duis fugiat anim.",
+            "spans": []
+          }
+        ]
+      }
+    ],
+    "contactHeading": [
+      {
+        "type": "paragraph",
+        "text": "Veniam culpa aliqua ipsum ea. Exercitation Lorem labore consequat. Fugiat aute sit ad culpa enim mollit non laboris cillum.",
+        "spans": []
+      }
+    ],
+    "contact": [
+      {
+        "email": [
+          {
+            "type": "paragraph",
+            "text": "Anim est sunt mollit esse.",
+            "spans": []
+          }
+        ],
+        "telephone": [
+          {
+            "type": "paragraph",
+            "text": "Sunt culpa qui eiusmod.",
+            "spans": []
+          }
+        ]
+      }
+    ],
+    "socialsHeading": [
+      {
+        "type": "paragraph",
+        "text": "Id cillum dolore dolore culpa voluptate esse aliquip.",
+        "spans": []
+      }
+    ],
+    "socials": [
+      {
+        "link": {
+          "link_type": "Web",
+          "url": "https://prismic.io"
+        },
+        "label": [
+          {
+            "type": "paragraph",
+            "text": "Id id cupidatat ad aute ut Lorem ea eu esse irure. Proident magna cupidatat voluptate.",
+            "spans": []
+          }
+        ]
+      }
+    ]
+  }
+}
