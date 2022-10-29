@@ -1,0 +1,92 @@
+{
+  "id": "event_cards",
+  "type": "SharedSlice",
+  "name": "EventCards",
+  "description": "EventCards",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "sktwi1xtmkfgx8626",
+      "description": "EventCards",
+      "primary": {
+        "heading": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Heading",
+            "placeholder": "This is where it all begins...",
+            "allowTargetBlank": true,
+            "single": "heading1"
+          }
+        }
+      },
+      "items": {
+        "title": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Title",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+          }
+        },
+        "location": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Location",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+          }
+        },
+        "image": {
+          "type": "Image",
+          "config": {
+            "label": "Image",
+            "constraint": {},
+            "thumbnails": []
+          }
+        },
+        "date": {
+          "type": "Date",
+          "config": {
+            "label": "Date",
+            "placeholder": ""
+          }
+        },
+        "facebookEventButtonText": {
+          "type": "Text",
+          "config": {
+            "label": "Facebook Event Button Text",
+            "placeholder": ""
+          }
+        },
+        "facebookEvent": {
+          "type": "Link",
+          "config": {
+            "label": "Facebook Event",
+            "placeholder": "",
+            "select": null
+          }
+        },
+        "ticketLinkButtonText": {
+          "type": "Text",
+          "config": {
+            "label": "Ticket Link Button Text",
+            "placeholder": ""
+          }
+        },
+        "ticketLink": {
+          "type": "Link",
+          "config": {
+            "label": "Ticket Link",
+            "placeholder": "",
+            "select": null
+          }
+        }
+      },
+      "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
+    }
+  ]
+}

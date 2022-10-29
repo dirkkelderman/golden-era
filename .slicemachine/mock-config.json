@@ -4,5 +4,21 @@
     "settings": {},
     "navigation": {},
     "footer": {}
+  },
+  "slices": {
+    "Text": {},
+    "TextWithImage": {},
+    "EventCards": {
+      "default": {
+        "primary": {
+          "heading": {
+            "config": {
+              "patternType": "HEADING",
+              "blocks": 1
+            }
+          }
+        }
+      }
+    }
   }
 }

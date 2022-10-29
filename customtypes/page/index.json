@@ -31,10 +31,32 @@
           ]
         }
       },
+      "backgroundColor": {
+        "type": "Color",
+        "config": {
+          "label": "Background Color",
+          "placeholder": ""
+        }
+      },
+      "textColor": {
+        "type": "Color",
+        "config": {
+          "label": "Text Color",
+          "placeholder": ""
+        }
+      },
       "slices": {
         "type": "Slices",
         "fieldset": "Slice Zone",
         "config": {
+          "choices": {
+            "text_with_image": {
+              "type": "SharedSlice"
+            },
+            "event_cards": {
+              "type": "SharedSlice"
+            }
+          }
         }
       }
     },
