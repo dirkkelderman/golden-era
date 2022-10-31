@@ -55,6 +55,9 @@
             },
             "event_cards": {
               "type": "SharedSlice"
+            },
+            "hero": {
+              "type": "SharedSlice"
             }
           }
         }

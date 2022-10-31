@@ -341,7 +341,7 @@ interface PageDocumentData {
  * Slice for *Page → Slice Zone*
  *
  */
-type PageDocumentDataSlicesSlice = TextWithImageSlice | EventCardsSlice;
+type PageDocumentDataSlicesSlice = TextWithImageSlice | EventCardsSlice | HeroSlice;
 /**
  * Slice for *Page → Slice Zone*
  *
@@ -519,6 +519,65 @@ type EventCardsSliceVariation = EventCardsSliceDefault;
  */
 export type EventCardsSlice = prismicT.SharedSlice<"event_cards", EventCardsSliceVariation>;
 /**
+ * Primary content in Hero → Primary
+ *
+ */
+interface HeroSliceDefaultPrimary {
+    /**
+     * Heading field in *Hero → Primary*
+     *
+     * - **Field Type**: Title
+     * - **Placeholder**: This is where it all begins...
+     * - **API ID Path**: hero.primary.heading
+     * - **Documentation**: https://prismic.io/docs/core-concepts/rich-text-title
+     *
+     */
+    heading: prismicT.TitleField;
+    /**
+     * Text field in *Hero → Primary*
+     *
+     * - **Field Type**: Rich Text
+     * - **Placeholder**: A nice description of your feature
+     * - **API ID Path**: hero.primary.text
+     * - **Documentation**: https://prismic.io/docs/core-concepts/rich-text-title
+     *
+     */
+    text: prismicT.RichTextField;
+    /**
+     * Image field in *Hero → Primary*
+     *
+     * - **Field Type**: Image
+     * - **Placeholder**: *None*
+     * - **API ID Path**: hero.primary.image
+     * - **Documentation**: https://prismic.io/docs/core-concepts/image
+     *
+     */
+    image: prismicT.ImageField<never>;
+}
+/**
+ * Default variation for Hero Slice
+ *
+ * - **API ID**: `default`
+ * - **Description**: `Hero`
+ * - **Documentation**: https://prismic.io/docs/core-concepts/reusing-slices
+ *
+ */
+export type HeroSliceDefault = prismicT.SharedSliceVariation<"default", Simplify<HeroSliceDefaultPrimary>, never>;
+/**
+ * Slice variation for *Hero*
+ *
+ */
+type HeroSliceVariation = HeroSliceDefault;
+/**
+ * Hero Shared Slice
+ *
+ * - **API ID**: `hero`
+ * - **Description**: `Hero`
+ * - **Documentation**: https://prismic.io/docs/core-concepts/reusing-slices
+ *
+ */
+export type HeroSlice = prismicT.SharedSlice<"hero", HeroSliceVariation>;
+/**
  * Primary content in TextWithImage → Primary
  *
  */
@@ -662,6 +721,6 @@ declare module "@prismicio/client" {
         (repositoryNameOrEndpoint: string, options?: prismic.ClientConfig): prismic.Client<AllDocumentTypes>;
     }
     namespace Content {
-        export type { FooterDocumentData, FooterDocumentDataSitemapItem, FooterDocumentDataContactItem, FooterDocumentDataSocialsItem, FooterDocument, NavigationDocumentData, NavigationDocumentDataLinksItem, NavigationDocument, PageDocumentData, PageDocumentDataSlicesSlice, PageDocumentDataSlices1Slice, PageDocument, SettingsDocumentData, SettingsDocument, AllDocumentTypes, EventCardsSliceDefaultPrimary, EventCardsSliceDefaultItem, EventCardsSliceDefault, EventCardsSliceVariation, EventCardsSlice, TextWithImageSliceDefaultPrimary, TextWithImageSliceDefault, TextWithImageSliceWithButtonPrimary, TextWithImageSliceWithButton, TextWithImageSliceTextRightPrimary, TextWithImageSliceTextRight, TextWithImageSliceVariation, TextWithImageSlice };
+        export type { FooterDocumentData, FooterDocumentDataSitemapItem, FooterDocumentDataContactItem, FooterDocumentDataSocialsItem, FooterDocument, NavigationDocumentData, NavigationDocumentDataLinksItem, NavigationDocument, PageDocumentData, PageDocumentDataSlicesSlice, PageDocumentDataSlices1Slice, PageDocument, SettingsDocumentData, SettingsDocument, AllDocumentTypes, EventCardsSliceDefaultPrimary, EventCardsSliceDefaultItem, EventCardsSliceDefault, EventCardsSliceVariation, EventCardsSlice, HeroSliceDefaultPrimary, HeroSliceDefault, HeroSliceVariation, HeroSlice, TextWithImageSliceDefaultPrimary, TextWithImageSliceDefault, TextWithImageSliceWithButtonPrimary, TextWithImageSliceWithButton, TextWithImageSliceTextRightPrimary, TextWithImageSliceTextRight, TextWithImageSliceVariation, TextWithImageSlice };
     }
 }

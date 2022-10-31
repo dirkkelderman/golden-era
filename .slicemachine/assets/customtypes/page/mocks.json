@@ -14,7 +14,7 @@
     "title": [
       {
         "type": "heading1",
-        "text": "Anyway",
+        "text": "Usual",
         "spans": []
       }
     ],
@@ -28,20 +28,20 @@
       "first_publication_date": "1970-01-01T00:00:01+0000",
       "last_publication_date": "1970-01-01T01:00:00+0000"
     },
-    "backgroundColor": "#73888e",
-    "textColor": "#739c11",
+    "backgroundColor": "#dbde8e",
+    "textColor": "#c6129e",
     "slices": [],
     "socialCardTitle": [
       {
         "type": "paragraph",
-        "text": "Qui in sit id.",
+        "text": "Minim consectetur ut velit esse commodo. Exercitation proident veniam fugiat anim nostrud dolor reprehenderit pariatur veniam enim elit. Reprehenderit et incididunt dolore nulla sunt aute ex elit.",
         "spans": []
       }
     ],
     "socialCardDescription": [
       {
         "type": "paragraph",
-        "text": "Id in exercitation ipsum dolor veniam cupidatat id ipsum laboris. Exercitation non exercitation incididunt quis est. Aliquip anim nostrud reprehenderit.",
+        "text": "Quis sunt labore laborum id aliqua id incididunt fugiat incididunt ex exercitation ullamco.",
         "spans": []
       }
     ],
@@ -52,10 +52,10 @@
       },
       "alt": null,
       "copyright": null,
-      "url": "https://images.unsplash.com/photo-1606248897732-2c5ffe759c04"
+      "url": "https://images.unsplash.com/photo-1600804931749-2da4ce26c869"
     },
     "slices1": [],
-    "metaTitle": "upward",
-    "metaDescription": "definition"
+    "metaTitle": "battle",
+    "metaDescription": "open"
   }
 }

@@ -1,0 +1,35 @@
+[
+  {
+    "variation": "default",
+    "version": "sktwi1xtmkfgx8626",
+    "items": [
+      {}
+    ],
+    "primary": {
+      "heading": [
+        {
+          "type": "heading1",
+          "text": "Becoming",
+          "spans": []
+        }
+      ],
+      "text": [
+        {
+          "type": "paragraph",
+          "text": "Id eu Lorem enim est aliqua labore. Velit et laborum sit et dolor dolore in labore deserunt quis laboris sint in. Nulla non aliqua esse Lorem aliqua pariatur Lorem est proident amet eu deserunt anim.",
+          "spans": []
+        }
+      ],
+      "image": {
+        "dimensions": {
+          "width": 900,
+          "height": 500
+        },
+        "alt": null,
+        "copyright": null,
+        "url": "https://images.unsplash.com/photo-1589652717521-10c0d092dea9"
+      }
+    },
+    "slice_type": "hero"
+  }
+]
