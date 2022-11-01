@@ -17,7 +17,7 @@ export type HeroSlice = SliceComponentProps<Content.HeroSlice>;
 const Hero = ({ slice }: HeroSlice) => {
   const image = slice.primary.image;
   return (
-    <Bounded as="section" yPadding="base">
+    <Bounded as="section" yPadding="xs">
       <div className="relative flex flex-col items-center justify-center h-full">
         <PrismicNextImage field={image} layout="responsive" />
       </div>
