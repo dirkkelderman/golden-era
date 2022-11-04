@@ -19,10 +19,10 @@ export type HeaderProps = {
 export const Header = ({ navigation, settings }: HeaderProps) => {
   const image = settings?.data?.logo;
   return (
-    <Bounded as="header" yPadding="xs">
+    <Bounded as="header" yPadding="xs" className="z-0" >
       <div className="flex flex-wrap items-baseline justify-center gap-x-6 gap-y-3 leading-none lg:justify-between">
         <PrismicLink href="/" className=" text-xl font-semibold tracking-tight">
-          <div className="flex items-center">
+          <div className="flex items-center z-10">
             <div className="flex items-center px-3">
               <Image
                 src={image?.url || ""}

@@ -49,19 +49,19 @@ const EventCard = ({ event }: any) => {
     borderArray[Math.floor(Math.random() * borderArray.length)];
 
   const borderStyleCard = {
-    border: `5px ${randomBorderStyle} #E5E7EB`,
-    borderRadius: "0.5rem",
+    border: `5px ${randomBorderStyle} black`,
+    // borderRadius: "0.5rem",
   };
 
   const borderStyleButton = {
-    border: `2px ${randomBorderStyle} #183540`,
-    borderRadius: "0.5rem",
+    border: `2px ${randomBorderStyle} black`,
+    // borderRadius: "0.5rem",
   };
 
   return (
     <div
       // key={index}
-      className="grid grid-cols-1 gap-2 md:grid-cols-3 shadow-lg  mt-4"
+      className="grid grid-cols-1 gap-2 md:grid-cols-3 shadow-lg  mt-4 z-20"
       style={borderStyleCard}
     >
       <div className=" w-full h-32 relative flex justify-center items-center">
@@ -79,10 +79,10 @@ const EventCard = ({ event }: any) => {
           <p>{event.date}</p>
         </div>
       </div>
-      <div className="flex flex-col justify-center items-center">
+      <div className="flex flex-col justify-center items-center bg-red-300">
         {prismicH.isFilled.link(event.facebookEvent) && (
           <div
-            className="m-1 md:m-2 w-60 text-center hover:bg-[#183540] px-5 py-2 font-semibold text-[#183540] hover:text-white "
+            className="m-1 md:m-2 w-60 text-center hover:bg-black px-5 py-2 font-semibold text-[#183540] hover:text-white "
             style={borderStyleButton}
           >
             <PrismicLink field={event.facebookEvent} className=" ">
@@ -93,7 +93,7 @@ const EventCard = ({ event }: any) => {
 
         {prismicH.isFilled.link(event.facebookEvent) && (
           <div
-            className="m-1 md:m-2 w-60 text-center bg-[#183540] hover:bg-white px-5 py-2 font-semibold text-white hover:text-[#183540] "
+            className="m-1 md:m-2 w-60 text-center bg-black hover:bg-red-300 px-5 py-2 font-semibold text-white hover:text-[#183540] "
             style={borderStyleButton}
           >
             <PrismicLink field={event.ticketLink} className="">
@@ -118,8 +118,8 @@ const EventCards = ({ slice }: EventCardsProps) => {
     .filter((item) => new Date(item.date as string) > currentDate);
 
   return (
-    <Bounded as="section" yPadding="xs">
-      <div>
+    <Bounded as="section" yPadding="xs" className="z-20">
+      <div >
         {prismicH.isFilled.richText(slice.primary.heading) && (
           <Heading className="text-center py-3">
             <PrismicText field={slice.primary.heading} />

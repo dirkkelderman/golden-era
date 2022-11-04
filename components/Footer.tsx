@@ -23,7 +23,7 @@ const components = {
 
 export const Footer = ({ footer }: FooterProps) => {
   return (
-    <Bounded as="footer" yPadding="sm" className="bg-[#183540] text-white">
+    <Bounded as="footer" yPadding="sm" className="bg-black text-white">
       Footer
       {/* <div className="grid grid-cols-2 gap-x-6 gap-y-3 text-center leading-none md:grid-cols-4 ">
         <div className="flex h-full flex-col justify-between items-center">
